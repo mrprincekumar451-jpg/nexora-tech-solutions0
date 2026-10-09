@@ -1,0 +1,275 @@
+
+{% extends "base.html" %}
+
+{% block title %}NEXORA TECH SOLUTIONS | IT Support & Networking{% endblock %}
+
+{% block content %}
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-content">
+        <p class="eyebrow">IT SUPPORT · HARDWARE · NETWORKING</p>
+
+        <h1>
+            Smart Technology.
+            <span class="gradient-text">Reliable Solutions.</span>
+        </h1>
+
+        <p class="hero-description">
+            Welcome to NEXORA TECH SOLUTIONS. We focus on computer hardware,
+            laptop repair, Windows installation, networking and technical
+            support for individuals, offices and businesses.
+        </p>
+
+        <div class="hero-actions">
+            <a href="{{ url_for('services') }}" class="btn btn-primary">
+                Explore Our Services ↗
+            </a>
+            <a href="#company-contact" class="btn btn-secondary">
+                Contact Our Team
+            </a>
+        </div>
+
+        <div class="hero-trust">
+            <span>Hardware Support</span>
+            <span>Networking</span>
+            <span>IT Solutions</span>
+        </div>
+    </div>
+
+    <div class="hero-visual">
+        <div class="tech-orbit">
+            <div class="tech-core">N</div>
+
+            <div class="tech-float float-one">
+                <strong>IT SUPPORT</strong>
+                Technical assistance
+            </div>
+
+            <div class="tech-float float-two">
+                <strong>NETWORKING</strong>
+                Stay connected
+            </div>
+
+            <div class="tech-float float-three">
+                <strong>HARDWARE</strong>
+                Smarter systems
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SERVICE HIGHLIGHTS -->
+<section class="service-strip">
+    <div class="strip-item">
+        <span class="strip-icon">💻</span>
+        <div>
+            <h3>Hardware & Laptop</h3>
+            <p>Repair and maintenance</p>
+        </div>
+    </div>
+
+    <div class="strip-item">
+        <span class="strip-icon">🌐</span>
+        <div>
+            <h3>Networking</h3>
+            <p>LAN, Wi-Fi and routers</p>
+        </div>
+    </div>
+
+    <div class="strip-item">
+        <span class="strip-icon">🖥️</span>
+        <div>
+            <h3>Windows & Software</h3>
+            <p>Installation and setup</p>
+        </div>
+    </div>
+
+    <div class="strip-item">
+        <span class="strip-icon">🛠️</span>
+        <div>
+            <h3>IT Support</h3>
+            <p>Technical assistance</p>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT COMPANY -->
+<section class="home-features section-container">
+    <p class="section-label">ABOUT OUR COMPANY</p>
+
+    <h2 class="section-heading">
+        Your Technology Partner at
+        <span class="gradient-text">NEXORA.</span>
+    </h2>
+
+    <p class="section-description">
+        NEXORA TECH SOLUTIONS focuses on practical IT support, computer
+        systems, network connectivity and technology maintenance.
+        Our aim is to provide clear guidance and dependable support
+        for everyday IT requirements.
+    </p>
+
+    <div class="features-grid">
+        <article class="feature-card">
+            <div class="feature-icon">💻</div>
+            <h3>Hardware Solutions</h3>
+            <p>
+                Laptop and desktop troubleshooting, component upgrades,
+                hardware diagnosis and preventive maintenance.
+            </p>
+        </article>
+
+        <article class="feature-card">
+            <div class="feature-icon">📡</div>
+            <h3>Networking Services</h3>
+            <p>
+                Wi-Fi, router, LAN and Ethernet setup, IP configuration
+                and network troubleshooting.
+            </p>
+        </article>
+
+        <article class="feature-card">
+            <div class="feature-icon">☁️</div>
+            <h3>Technical Support</h3>
+            <p>
+                Windows installation, software setup, printer configuration
+                and everyday IT assistance.
+            </p>
+        </article>
+    </div>
+
+    <div style="margin-top: 30px;">
+        <a href="{{ url_for('services') }}" class="btn btn-secondary">
+            View All Services ↗
+        </a>
+    </div>
+</section>
+
+<!-- OUR TEAM -->
+<section class="team-section section-container" id="our-team">
+    <div class="team-heading">
+        <p class="eyebrow">MEET OUR TEAM</p>
+
+        <h2 class="section-heading">
+            The People Behind
+            <span class="gradient-text">NEXORA</span>
+        </h2>
+
+        <p class="section-description">
+            Meet our leadership and technical support team.
+        </p>
+    </div>
+
+    <div class="team-grid">
+
+        <!-- FOUNDER -->
+        <article class="team-card">
+            <div class="team-avatar">SS</div>
+            <p class="team-role">FOUNDER & LEADERSHIP</p>
+            <h3>Shivam Singh</h3>
+            <p class="team-description">
+                Founder of NEXORA TECH SOLUTIONS.
+            </p>
+            <div class="team-divider"></div>
+            <p class="team-speciality">
+                <span>✦</span> Company Leadership
+            </p>
+        </article>
+
+        <!-- MANAGER / IT ENGINEER -->
+        <article class="team-card">
+            <div class="team-avatar">PK</div>
+            <p class="team-role">MANAGER · IT ENGINEER</p>
+            <h3>Prince Kumar</h3>
+            <p class="team-description">
+                IT Support Technician.
+            </p>
+            <div class="team-divider"></div>
+            <p class="team-speciality">
+                <span>✦</span> IT Operations & Support
+            </p>
+        </article>
+    </div>
+
+    <!-- SUPPORT TEAM -->
+    <div class="support-team">
+        <p class="eyebrow">TECHNICAL SUPPORT TEAM</p>
+        <h3 class="support-title">Our Support Team</h3>
+
+        <div class="support-names">
+            <span><b>01</b> Pranjal</span>
+            <span><b>02</b> Aadarsh</span>
+            <span><b>03</b> Khurshid</span>
+            <span><b>04</b> Mainu</span>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT INFORMATION -->
+<section class="company-contact section-container" id="company-contact">
+    <div class="contact-heading">
+        <p class="eyebrow">GET IN TOUCH</p>
+
+        <h2>
+            Contact
+            <span class="gradient-text">NEXORA TECH SOLUTIONS.</span>
+        </h2>
+
+        <p>
+            For IT support and service enquiries, contact our team.
+        </p>
+    </div>
+
+    <div class="contact-details">
+
+        <!-- OFFICIAL EMAIL -->
+        <a href="mailto:techsolutionsnexona@gmail.com"
+           class="contact-detail">
+            <span class="contact-symbol">✉</span>
+            <span class="contact-text">
+                <small>OFFICIAL EMAIL</small>
+                <strong>techsolutionsnexona@gmail.com</strong>
+                <em>Send an email ↗</em>
+            </span>
+        </a>
+
+        <!-- CONTACT NUMBER 1 -->
+        <a href="tel:+917081489690" class="contact-detail">
+            <span class="contact-symbol">☎</span>
+            <span class="contact-text">
+                <small>CONTACT NUMBER 01</small>
+                <strong>+91 70814 89690</strong>
+                <em>Call our team ↗</em>
+            </span>
+        </a>
+
+        <!-- CONTACT NUMBER 2 -->
+        <a href="tel:+918090394065" class="contact-detail">
+            <span class="contact-symbol">☎</span>
+            <span class="contact-text">
+                <small>CONTACT NUMBER 02</small>
+                <strong>+91 80903 94065</strong>
+                <em>Call our team ↗</em>
+            </span>
+        </a>
+    </div>
+
+    <a href="{{ url_for('contact') }}" class="btn btn-primary">
+        Send an Enquiry ↗
+    </a>
+</section>
+
+<!-- FINAL CTA -->
+<section class="cta-section">
+    <div>
+        <p class="eyebrow">YOUR TECHNOLOGY, OUR PRIORITY</p>
+        <h2>Let's build a smarter, more connected future.</h2>
+    </div>
+
+    <a href="{{ url_for('contact') }}" class="btn btn-primary">
+        Get IT Support ↗
+    </a>
+</section>
+
+{% endblock %}
