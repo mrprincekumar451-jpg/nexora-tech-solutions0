@@ -1,0 +1,102 @@
+```html
+{% extends "base.html" %}
+{% block title %}Contact Us | NEXORA TECH SOLUTIONS{% endblock %}
+
+{% block content %}
+<section class="page-hero">
+    <p class="eyebrow">GET IN TOUCH</p>
+    <h1>Let's Solve Your<br>
+        <span class="gradient-text">IT Challenges.</span>
+    </h1>
+    <p class="page-description">
+        Have a computer, networking or IT support requirement?
+        Send us a message and let's discuss your needs.
+    </p>
+</section>
+
+<section class="section-container contact-section">
+    <div class="contact-info">
+        <p class="section-label">CONTACT NEXORA</p>
+        <h2 class="section-heading">We're here to help.</h2>
+        <p class="contact-description">
+            Share your technical issue or service requirement.
+            We'll use your message to understand how we can help.
+        </p>
+
+        <div class="contact-info-card">
+            <span class="contact-info-icon">💻</span>
+            <div>
+                <h3>IT Support</h3>
+                <p>Computer, laptop and software assistance</p>
+            </div>
+        </div>
+
+        <div class="contact-info-card">
+            <span class="contact-info-icon">🌐</span>
+            <div>
+                <h3>Networking</h3>
+                <p>Wi-Fi, router, LAN and connectivity support</p>
+            </div>
+        </div>
+
+        <div class="contact-info-card">
+            <span class="contact-info-icon">💬</span>
+            <div>
+                <h3>WhatsApp Contact</h3>
+                <p>Submit the form to continue through WhatsApp</p>
+            </div>
+        </div>
+
+        <div class="contact-highlight">
+            <span>✦</span>
+            <p>Clear communication. Practical solutions. Reliable support.</p>
+        </div>
+    </div>
+
+    <div class="contact-form-card">
+        <p class="section-label">SEND A MESSAGE</p>
+        <h2>Tell us what you need.</h2>
+
+        <form method="POST" action="{{ url_for('contact') }}">
+            <label for="name">Your Name</label>
+            <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your full name"
+                maxlength="100"
+                required
+            >
+
+            <label for="email">Email Address</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="you@example.com"
+                maxlength="254"
+                required
+            >
+
+            <label for="message">How can we help?</label>
+            <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Describe your IT issue or requirement..."
+                maxlength="3000"
+                required
+            ></textarea>
+
+            <button type="submit" class="btn btn-primary contact-submit">
+                Continue to WhatsApp <span>↗</span>
+            </button>
+
+            <p class="form-note">
+                Your message will open in WhatsApp after submission.
+            </p>
+        </form>
+    </div>
+</section>
+{% endblock %}
+```
