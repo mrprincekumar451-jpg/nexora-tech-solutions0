@@ -1,0 +1,180 @@
+
+{% extends "base.html" %}
+
+{% block title %}Our Services | NEXORA TECH SOLUTIONS{% endblock %}
+
+{% block content %}
+
+<section class="page-hero">
+    <p class="eyebrow">OUR SERVICES</p>
+    <h1>IT Solutions for<br>
+        <span class="gradient-text">Your Every Need.</span>
+    </h1>
+    <p class="page-description">
+        From computer repair to networking and cloud support,
+        NEXORA TECH SOLUTIONS helps keep your technology running smoothly.
+    </p>
+</section>
+
+<section class="section-container services-section">
+
+    <div class="services-heading">
+        <p class="section-label">WHAT WE OFFER</p>
+        <h2 class="section-heading">
+            Professional IT Services
+        </h2>
+        <p class="section-description">
+            Reliable support for individuals, offices and businesses.
+        </p>
+    </div>
+
+    <div class="services-grid">
+
+        <!-- Service 1 -->
+        <article class="service-card">
+            <div class="service-card-top">
+                <span class="service-icon">💻</span>
+                <span class="service-number">01</span>
+            </div>
+            <h3>Hardware & Laptop Repair</h3>
+            <p>
+                Computer and laptop troubleshooting, hardware diagnosis,
+                upgrades and maintenance to help keep your devices working
+                efficiently.
+            </p>
+            <ul>
+                <li>Laptop and desktop troubleshooting</li>
+                <li>RAM and SSD upgrades</li>
+                <li>Hardware diagnosis and maintenance</li>
+            </ul>
+        </article>
+
+        <!-- Service 2 -->
+        <article class="service-card">
+            <div class="service-card-top">
+                <span class="service-icon">🖥️</span>
+                <span class="service-number">02</span>
+            </div>
+            <h3>Windows Installation & Software</h3>
+            <p>
+                Operating system installation, software setup, driver
+                configuration and troubleshooting for computer systems.
+            </p>
+            <ul>
+                <li>Windows installation and configuration</li>
+                <li>Software installation and updates</li>
+                <li>Drivers and system troubleshooting</li>
+            </ul>
+        </article>
+
+        <!-- Service 3 -->
+        <article class="service-card">
+            <div class="service-card-top">
+                <span class="service-icon">🖨️</span>
+                <span class="service-number">03</span>
+            </div>
+            <h3>Printer & Scanner Setup</h3>
+            <p>
+                Printer and scanner installation, driver setup and
+                connectivity troubleshooting for home and office use.
+            </p>
+            <ul>
+                <li>Printer and scanner installation</li>
+                <li>USB and network printer setup</li>
+                <li>Printing and scanning issue diagnosis</li>
+            </ul>
+        </article>
+
+        <!-- Service 4 -->
+        <article class="service-card">
+            <div class="service-card-top">
+                <span class="service-icon">📡</span>
+                <span class="service-number">04</span>
+            </div>
+            <h3>Wi-Fi / Router / LAN Setup</h3>
+            <p>
+                Network connectivity setup and troubleshooting for reliable
+                internet access at homes and workplaces.
+            </p>
+            <ul>
+                <li>Wi-Fi and router configuration</li>
+                <li>LAN and Ethernet setup</li>
+                <li>IP configuration and connectivity checks</li>
+            </ul>
+        </article>
+
+        <!-- Service 5 -->
+        <article class="service-card">
+            <div class="service-card-top">
+                <span class="service-icon">🌐</span>
+                <span class="service-number">05</span>
+            </div>
+            <h3>Networking (N+ / CCNA)</h3>
+            <p>
+                Networking installation and support based on network
+                fundamentals, routing, switching and connectivity diagnostics.
+            </p>
+            <ul>
+                <li>Network troubleshooting</li>
+                <li>Router and switch configuration</li>
+                <li>IP addressing and basic routing support</li>
+            </ul>
+        </article>
+
+        <!-- Service 6 -->
+        <article class="service-card">
+            <div class="service-card-top">
+                <span class="service-icon">☁️</span>
+                <span class="service-number">06</span>
+            </div>
+            <h3>Cloud & IT Support</h3>
+            <p>
+                Technical assistance with IT systems, basic cloud services,
+                user setup and everyday technology issues.
+            </p>
+            <ul>
+                <li>Basic cloud setup and support</li>
+                <li>IT troubleshooting and user assistance</li>
+                <li>System and account configuration</li>
+            </ul>
+        </article>
+
+        <!-- Service 7 -->
+        <article class="service-card">
+            <div class="service-card-top">
+                <span class="service-icon">🛠️</span>
+                <span class="service-number">07</span>
+            </div>
+            <h3>AMC & IT Consultancy</h3>
+            <p>
+                IT maintenance planning and technology guidance to help
+                businesses manage their computer systems and IT requirements.
+            </p>
+            <ul>
+                <li>Annual Maintenance Contract (AMC)</li>
+                <li>Preventive maintenance planning</li>
+                <li>IT infrastructure consultancy</li>
+            </ul>
+        </article>
+
+    </div>
+
+    <p class="service-note">
+        Service availability, scope and pricing are confirmed after discussing
+        your requirements.
+    </p>
+
+</section>
+
+<section class="cta-section">
+    <div>
+        <p class="eyebrow">NEED IT ASSISTANCE?</p>
+        <h2>Let's find the right solution.</h2>
+    </div>
+    <a href="{{ url_for('contact') }}" class="btn btn-primary">
+        Contact Us <span>↗</span>
+    </a>
+</section>
+
+{% endblock %}
+
