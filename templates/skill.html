@@ -1,0 +1,129 @@
+
+{% extends "base.html" %}
+
+{% block title %}Technical Skills | NEXORA TECH SOLUTIONS{% endblock %}
+
+{% block content %}
+
+<section class="page-hero">
+    <p class="eyebrow">OUR TECHNICAL EXPERTISE</p>
+    <h1>Skills That Power<br>
+        <span class="gradient-text">Technology.</span>
+    </h1>
+    <p class="page-description">
+        Explore our technical focus areas across computer hardware,
+        operating systems, networking and IT support.
+    </p>
+</section>
+
+<section class="section-container skills-section">
+
+    <div class="services-heading">
+        <p class="section-label">TECHNICAL SKILLS</p>
+        <h2 class="section-heading">Knowledge & Capabilities</h2>
+        <p class="section-description">
+            Core areas of technical learning and service capability.
+        </p>
+    </div>
+
+    <div class="skills-grid">
+
+        <article class="skill-card">
+            <div class="skill-card-icon">💻</div>
+            <h3>Computer Hardware</h3>
+            <p>PC components, laptop hardware and troubleshooting.</p>
+            <div class="skill-tags">
+                <span>Desktop & Laptop</span>
+                <span>RAM & SSD</span>
+                <span>Hardware Diagnosis</span>
+                <span>Maintenance</span>
+            </div>
+        </article>
+
+        <article class="skill-card">
+            <div class="skill-card-icon">🪟</div>
+            <h3>Windows & Software</h3>
+            <p>Operating system setup and software support.</p>
+            <div class="skill-tags">
+                <span>Windows Installation</span>
+                <span>Drivers</span>
+                <span>Software Setup</span>
+                <span>Troubleshooting</span>
+            </div>
+        </article>
+
+        <article class="skill-card">
+            <div class="skill-card-icon">🌐</div>
+            <h3>Networking — N+ / CCNA</h3>
+            <p>Networking concepts, configuration and diagnostics.</p>
+            <div class="skill-tags">
+                <span>TCP/IP</span>
+                <span>OSI Model</span>
+                <span>IP Addressing</span>
+                <span>Routing & Switching</span>
+                <span>LAN / WAN</span>
+            </div>
+        </article>
+
+        <article class="skill-card">
+            <div class="skill-card-icon">📡</div>
+            <h3>Network Devices</h3>
+            <p>Basic setup and troubleshooting of network equipment.</p>
+            <div class="skill-tags">
+                <span>Routers</span>
+                <span>Switches</span>
+                <span>Wi-Fi</span>
+                <span>Ethernet</span>
+            </div>
+        </article>
+
+        <article class="skill-card">
+            <div class="skill-card-icon">☁️</div>
+            <h3>Cloud & IT Support</h3>
+            <p>IT support fundamentals and introductory cloud concepts.</p>
+            <div class="skill-tags">
+                <span>IT Troubleshooting</span>
+                <span>User Support</span>
+                <span>Cloud Fundamentals</span>
+                <span>System Setup</span>
+            </div>
+        </article>
+
+        <article class="skill-card">
+            <div class="skill-card-icon">🛠️</div>
+            <h3>Maintenance & Consultancy</h3>
+            <p>Preventive maintenance and IT requirement planning.</p>
+            <div class="skill-tags">
+                <span>System Maintenance</span>
+                <span>Printer Setup</span>
+                <span>IT Documentation</span>
+                <span>AMC Planning</span>
+            </div>
+        </article>
+
+    </div>
+
+    <div class="skills-note">
+        <span class="skills-note-icon">✦</span>
+        <div>
+            <h3>Continuous Learning</h3>
+            <p>
+                Technology keeps evolving. We focus on strengthening
+                technical fundamentals and improving troubleshooting skills.
+            </p>
+        </div>
+    </div>
+
+</section>
+
+<section class="cta-section">
+    <div>
+        <p class="eyebrow">HAVE A TECHNICAL REQUIREMENT?</p>
+        <h2>Let's discuss your IT needs.</h2>
+    </div>
+    <a href="{{ url_for('contact') }}" class="btn btn-primary">
+        Contact Us <span>↗</span>
+    </a>
+</section>
+
+{% endblock %}
