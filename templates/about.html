@@ -1,0 +1,62 @@
+
+{% extends "base.html" %}
+
+{% block title %}About Us | NEXORA TECH SOLUTIONS{% endblock %}
+
+{% block content %}
+<section class="page-hero">
+    <p class="eyebrow">ABOUT NEXORA</p>
+    <h1>Technology with a<br><span class="gradient-text">Purpose.</span></h1>
+    <p class="page-description">
+        We believe technology should make work simpler, communication easier
+        and businesses more productive.
+    </p>
+</section>
+
+<section class="about-layout section-container">
+    <div class="about-visual">
+        <div class="about-symbol">N</div>
+        <p class="eyebrow">NEXORA TECH SOLUTIONS</p>
+        <h2>Reliable Technology.<br>Smarter Solutions.</h2>
+        <p>IT Support · Hardware · Networking</p>
+    </div>
+
+    <div class="about-content">
+        <p class="section-label">WHO WE ARE</p>
+        <h2 class="section-heading">
+            Practical IT solutions<br>for everyday challenges.
+        </h2>
+        <p>
+            NEXORA TECH SOLUTIONS is an IT-focused brand built around
+            computer hardware, networking and technical support. Our goal
+            is to make technology easier to understand and maintain.
+        </p>
+        <p>
+            From troubleshooting computer issues to understanding network
+            connectivity, we focus on practical solutions, clear explanations
+            and continuous learning.
+        </p>
+
+        <div class="about-points">
+            <div><span>✓</span> Hardware troubleshooting</div>
+            <div><span>✓</span> Networking fundamentals and support</div>
+            <div><span>✓</span> System setup and maintenance</div>
+            <div><span>✓</span> Customer-focused communication</div>
+        </div>
+
+        <a href="{{ url_for('services') }}" class="btn btn-primary">
+            Explore Our Services <span>↗</span>
+        </a>
+    </div>
+</section>
+
+<section class="cta-section">
+    <div>
+        <p class="eyebrow">LET'S CONNECT</p>
+        <h2>Have a technology question?</h2>
+    </div>
+    <a href="{{ url_for('contact') }}" class="btn btn-primary">
+        Contact Us <span>↗</span>
+    </a>
+</section>
+{% endblock %}
