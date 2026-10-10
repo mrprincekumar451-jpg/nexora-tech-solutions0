@@ -1,26 +1,34 @@
-```html
+
 {% extends "base.html" %}
-{% block title %}Contact Us | NEXORA TECH SOLUTIONS{% endblock %}
+{% block title %}Contact & Feedback | NEXORA TECH SOLUTIONS{% endblock %}
 
 {% block content %}
+
 <section class="page-hero">
     <p class="eyebrow">GET IN TOUCH</p>
-    <h1>Let's Solve Your<br>
+
+    <h1>
+        Let's Solve Your<br>
         <span class="gradient-text">IT Challenges.</span>
     </h1>
+
     <p class="page-description">
         Have a computer, networking or IT support requirement?
-        Send us a message and let's discuss your needs.
+        Send us a message, share your feedback and let us improve our service.
     </p>
 </section>
 
 <section class="section-container contact-section">
+
+    <!-- Contact Information -->
     <div class="contact-info">
         <p class="section-label">CONTACT NEXORA</p>
+
         <h2 class="section-heading">We're here to help.</h2>
+
         <p class="contact-description">
             Share your technical issue or service requirement.
-            We'll use your message to understand how we can help.
+            We welcome your suggestions and feedback.
         </p>
 
         <div class="contact-info-card">
@@ -40,10 +48,18 @@
         </div>
 
         <div class="contact-info-card">
+            <span class="contact-info-icon">⭐</span>
+            <div>
+                <h3>Feedback & Rating</h3>
+                <p>Your feedback helps us improve our services.</p>
+            </div>
+        </div>
+
+        <div class="contact-info-card">
             <span class="contact-info-icon">💬</span>
             <div>
                 <h3>WhatsApp Contact</h3>
-                <p>Submit the form to continue through WhatsApp</p>
+                <p>Send your message or feedback through WhatsApp.</p>
             </div>
         </div>
 
@@ -53,11 +69,14 @@
         </div>
     </div>
 
+    <!-- Contact and Feedback Form -->
     <div class="contact-form-card">
-        <p class="section-label">SEND A MESSAGE</p>
-        <h2>Tell us what you need.</h2>
+        <p class="section-label">CONTACT & FEEDBACK</p>
+
+        <h2>Tell us what you think.</h2>
 
         <form method="POST" action="{{ url_for('contact') }}">
+
             <label for="name">Your Name</label>
             <input
                 type="text"
@@ -65,6 +84,7 @@
                 name="name"
                 placeholder="Enter your full name"
                 maxlength="100"
+                autocomplete="name"
                 required
             >
 
@@ -75,28 +95,42 @@
                 name="email"
                 placeholder="you@example.com"
                 maxlength="254"
+                autocomplete="email"
                 required
             >
 
-            <label for="message">How can we help?</label>
+            <label for="rating">Rate Our Service</label>
+            <select id="rating" name="rating" required>
+                <option value="">Choose your rating</option>
+                <option value="5">★★★★★ - Excellent</option>
+                <option value="4">★★★★☆ - Very Good</option>
+                <option value="3">★★★☆☆ - Good</option>
+                <option value="2">★★☆☆☆ - Fair</option>
+                <option value="1">★☆☆☆☆ - Needs Improvement</option>
+            </select>
+
+            <label for="message">Message or Feedback</label>
             <textarea
                 id="message"
                 name="message"
                 rows="5"
-                placeholder="Describe your IT issue or requirement..."
+                placeholder="Describe your IT issue or share your feedback..."
                 maxlength="3000"
                 required
             ></textarea>
 
             <button type="submit" class="btn btn-primary contact-submit">
-                Continue to WhatsApp <span>↗</span>
+                Send Message & Feedback <span>↗</span>
             </button>
 
             <p class="form-note">
-                Your message will open in WhatsApp after submission.
+                After submission, WhatsApp will open with your message
+                and rating. You can review it before sending.
             </p>
+
         </form>
     </div>
+
 </section>
+
 {% endblock %}
-```
